@@ -164,7 +164,7 @@
   <div class=" row">
     <!-- div for Map Image -->
         <div class="col-6">
-            <div><img src="images/map2.png" alt="map" width="100%" height="500px" class="mt-5 mb-5 d-flex"></div>
+            <div><img src="Images/map2.png" alt="map" width="100%" height="500px" class="mt-5 mb-5 d-flex"></div>
         </div>
     
     <!-- div for Information -->
@@ -189,7 +189,7 @@
     </div> -->
   <div class="container">
       <div class="text-center mb-4 mt-5" id="title-form">
-        <div><img src="images/support.png" alt="contact" width="500px" height="auto"></div>
+        <div><img src="Images/support.png" alt="contact" width="500px" height="auto"></div>
         <h2>Contacts</h2>
         <p class="fs-5">Estamos aqui para hacer realidad de que tengas la casa sonada</p>
       </div>
