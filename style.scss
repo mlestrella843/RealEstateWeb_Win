@@ -8,13 +8,15 @@ $primary: #adb5bd;
 $secondary: #fd7e14;
 $nav_bar_menu: #6c757d;
 $success:#20c997;
-
+$info:#fd7e14;
+$danger: #dc3545;
 
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "nav_bar_menu": $nav_bar_menu,
-  "success":$success,
+  "info": $info,
+  "danger": $danger
 );
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";

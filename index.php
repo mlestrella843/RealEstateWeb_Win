@@ -28,7 +28,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <span class="text-primary fs-4 fw-bold">Dreamer Real Estate</span> 
+      <span class="text-secondary fs-4 fw-bold">Dreamer Real Estate</span> 
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,7 @@
 
        <form class="d-flex">
         <input class="form-control me-2 text-primary fs-5 fw-bold" type="email" placeholder="email" aria-label="email">
-        <button class="btn btn-secondary btn-primary-outline-success text-nav_bar_menu fs-5 fw-bold" type="button">Subscribe</button>
+        <button class="btn btn-secondary btn-primary-outline-success text-nav_bar_menu fs-5 fw-bold text-white" type="button">Subscribe</button>
       </form> 
 
     </div>
@@ -105,7 +105,7 @@
 
   <div class="row w-75 mx-auto my-5 servicio-fila"> 
     <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap border border-dark">
-      <img src="images/house1.jpeg" alt="rent" width="180" height="160">
+      <img src="images/house1.jpeg" class="rounded" alt="rent" width="180" height="160">
       <div> 
       <h3 class="fs-5 mt-4 px-4 pb-1">Rent</h3>
       <p class="px-4">We Rent all kind of properties, houses, condos, apartments, in different countries</p>
@@ -113,7 +113,7 @@
     </div>
 
     <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap border border-dark">
-      <img src="images/house2.jpeg" alt="rent" width="180" height="160">
+      <img src="images/house2.jpeg" class="rounded" alt="rent" width="180" height="160">
       <div>
       <h3 class="fs-5 mt-4 px-4 pb-1">Sale</h3>
       <p class="px-4">We Sale all kind of properties, houses, condos, apartments, in different countries</p>
@@ -123,7 +123,7 @@
 
 <div class="row w-75 mx-auto my-5 servicio-fila"> 
    <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap border border-dark">
-     <img src="images/house3.jpeg" alt="rent" width="180" height="160">
+     <img src="images/house3.jpeg" class="rounded" alt="rent" width="180" height="160">
      <div> 
      <h3 class="fs-5 mt-4 px-4 pb-1">Consulting</h3>
      <p class="px-4">We offer consulting to all kind of properties, houses, condos, apartments, in different countries</p>
@@ -131,7 +131,7 @@
    </div>
 
    <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap border border-dark">
-     <img src="images/house5.jpeg" alt="rent" width="180" height="160 border border-dark">
+     <img src="images/house5.jpeg" class="rounded" alt="rent" width="180" height="160 border border-dark">
      <div>
      <h3 class="fs-5 mt-4 px-4 pb-1">Design</h3>
      <p class="px-4">We offer Desing to all kind of properties, houses, condos, apartments, in different countries</p>
@@ -207,7 +207,7 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message"></textarea>
           </div>
           <div class="mb-3">
-            <button type="button" class="btn btn-secondary w-100 fs-5">Send your Message</button>
+            <button type="button" class="btn btn-secondary w-100 fs-5 text-white ">Send your message...</button>
           </div>
       </form>
   </div>
@@ -216,7 +216,7 @@
 
 <!-----Footer----------------->
 
-<footer class="w-100 d-flex align-items justify-content-center flex-wrap bg-primary">
+<footer class="w-100 d-flex align-items justify-content-center flex-wrap bg-primary p-5 text-white">
   <p class="fs-5 px-3 pt-3">Dreamers Real Estate. &copy; All rigths reserved 2023</p>
    <div id="icons">
       <a href="#"><i class="bi bi-facebook"></i></a>

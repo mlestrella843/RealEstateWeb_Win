@@ -60,34 +60,34 @@ if($_POST){
 ?>
 
 <br/>
-<div class="container">
+<div class="container mt-5">
     <div class="row">
         <div class="col-md-4">
         <!----------->                      
-          <div class="card">
-                <div class="card-header">
+          <div class="card fs-5 mb-5">
+                <div class="card-header text-uppercase fw-bold">
                     Project Information
                 </div>
-                <div class="card-body">          
+                <div class="card-body border border-3">          
                     <form action="adminSite.php" method="post" enctype="multipart/form-data">
                         <!-- nameproject es el nombre que entro por teclado, y que se guarda en la columna name de la base de datos-->
-                        Name of project: <input required class="form-control" type="text" name="nameProject" id=""> 
+                        Name of project: <input required class="form-control border border-3" type="text" name="nameProject" id=""> 
                         <br/>
-                        Image of project: <input required class="form-control" type="file" name="file" id="">
+                        Image of project: <input required class="form-control border border-3" type="file" name="file" id="">
                         <br/>
                         Description:
-                        <textarea required class="form-control" name="description" id="" cols="30" rows="4"></textarea>
+                        <textarea required class="form-control border border-3" name="description" id="" cols="30" rows="4"></textarea>
                         <br/>
-                        Address: <input required class="form-control" type="text" name="address" id=""> 
+                        Address: <input required class="form-control border border-3" type="text" name="address" id=""> 
                         <br/>
-                        city: <input required class="form-control" type="text" name="city" id=""> 
+                        city: <input required class="form-control border border-3" type="text" name="city" id=""> 
                         <br/>
-                        Status:<input required class="form-control" type="text" name="status" id=""> 
+                        Status:<input required class="form-control border border-3" type="text" name="status" id=""> 
                         <br/>
-                        Price: <input required class="form-control" type="text" name="price" id="">
+                        Price: <input required class="form-control border border-3" type="text" name="price" id="">
                         <br/>
 
-                        <input class="btn btn-success" type="submit" value="Send project">
+                        <input class="btn btn-secondary text-uppercase fw-bold fs-7 text-white" type="submit" value="Send project">
                     </form>
                 </div>  
             </div>
@@ -118,7 +118,7 @@ if($_POST){
                             <td><?php echo $property['name']; ?></td>
 
                             <td>                               
-                                <img width="100" src="Images/<?php echo $property['image']; ?>" alt="" srcset="">                               
+                                <img width="150" src="Images/<?php echo $property['image']; ?>" alt="" srcset="">                               
                             </td>
 
                             <td><?php echo $property['description']; ?></td>
@@ -131,7 +131,7 @@ if($_POST){
 
                             <td> <a class="btn btn-danger" href="adminSite.php?txtID=<?php echo $property['id']; ?>" role="button">Delete</a></td>
 
-                            <td> <a class="btn btn-info" href="edit.php?txtID=<?php echo $property['id']; ?>" role="button">Edit</a></td>
+                            <td> <a class="btn btn-info text-white" href="edit.php?txtID=<?php echo $property['id']; ?>" role="button">Edit</a></td>
                             
                         </tr>
                        <?php } ?>

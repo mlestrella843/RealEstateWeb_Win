@@ -23,10 +23,10 @@
     <p class="text-light mb-0 p-2 fs-6">Contact Us 1-(587)-444-4444</p>
   </header> -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary text-white p-2" id="menu">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <span class="text-primary fs-4 fw-bold">Dreamer Real Estate</span> 
+      <span class="text-white fs-4 fw-bold">Dreamer Real Estate</span> 
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,22 +35,22 @@
       
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-nav_bar_menu fs-5 fw-bold" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link text-nav_bar_menu fs-5 fw-bold text-white" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nav_bar_menu fs-5 fw-bold" href="projects.php">Projects</a>
+          <a class="nav-link text-nav_bar_menu fs-5 fw-bold text-white" href="projects.php">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nav_bar_menu fs-5 fw-bold" href="adminSite.php">Administration</a>
+          <a class="nav-link text-nav_bar_menu fs-5 fw-bold text-white" href="adminSite.php">Administration</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-nav_bar_menu fs-5 fw-bold" href="closeSession.php">Sign Out</a>
+          <a class="nav-link text-nav_bar_menu fs-5 fw-bold text-white" href="closeSession.php">Sign Out</a>
         </li>
       </ul>
 
       <form class="d-flex">
         <input class="form-control me-2 text-primary fs-5" type="text" name="search" placeholder="Find a property" aria-label="search" autocomplete="search">
-        <button class="btn btn-secondary btn-primary-outline-success text-nav_bar_menu fs-5 fw-bold" type="button">Search</button>
+        <button class="btn btn-secondary btn-primary-outline-success text-nav_bar_menu fs-5 fw-bold text-white" type="button">Search</button>
       </form>
 
     </div>

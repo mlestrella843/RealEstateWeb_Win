@@ -30,17 +30,17 @@ echo "Welcome ". $_SESSION['username'];
    <?php foreach($properties as $property) { ?>
 
     <div class="col">
-        <div class="card">
-        <img style="widht: 250px; height:300px;"  src="Images/<?php echo $property['image']; ?>" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="fonts" class="card-title"><?php echo $property['name']; ?></h5>
-            <p class="fonts" class="card-text"><?php echo $property['description']; ?></p>
-            <p class="fonts" class="card-text">Address: <?php echo $property['address']; ?></p>
-            <p class="fonts" class="card-text">City: <?php echo $property['city']; ?></p>
-            <p class="fonts" class="card-text">Status: <?php echo $property['status']; ?></p>
-            <p class="fonts" class="card-text">Price: <?php echo $property['price']; ?></p>
+        <div class="card border border-3" >
+            <img style="widht: 250px; height:300px;"  src="Images/<?php echo $property['image']; ?>" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="fonts" class="card-title"><?php echo $property['name']; ?></h5>
+                <p class="fonts" class="card-text"><?php echo $property['description']; ?></p>
+                <p class="fonts" class="card-text"><strong>Address:</strong><?php echo $property['address']; ?></p>
+                <p class="fonts" class="card-text"><strong>City:</strong> <?php echo $property['city']; ?></p>
+                <p class="fonts" class="card-text"><strong>Status:</strong> <?php echo $property['status']; ?></p>
+                <p class="fonts" class="card-text"><strong>Price:</strong> <?php echo $property['price']; ?></p>
 
-        </div>
+            </div>
         </div>
     </div>   
     
