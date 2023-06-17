@@ -1,4 +1,7 @@
 <?php 
+
+       // session_start();
+
         $server="localhost";
         $database="real_estate";
         $user="root";

@@ -1,14 +1,15 @@
 <?php include('connection.php');
-   session_start();
+    /*  $_SESSION['username']= "";
+      $_SESSION['password']= "";
+      $_SESSION['role']="";
+      $username ="";
+      $password = "";
+      $role = "";*/
+      session_start() 
 ?>
 
 <?php
-
-if($_POST){  
-
-    $_SESSION['username']= "";
-    $_SESSION['password']= "";
-    $_SESSION['role']="";
+  if($_POST){  
 
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -19,11 +20,11 @@ if($_POST){
     $arrayUsers = $sentence;
    
     foreach($arrayUsers as $oneUser){
+      // Este if funciona perfectamente bien
       if( $oneUser['role']=="admin" ){ 
         if( ($oneUser['username']==$username) && ($oneUser['password']==$password) ) {                 
                 $_SESSION['username']= $oneUser['username'];
-                $_SESSION['password']= $oneUser['password'];  
-                $_SESSION['role']=$oneUser['role'];     
+                 
                 print_r($oneUser['username'])."<br/>";
                 print_r($oneUser['password'])."<br/>";
                 print_r($oneUser['role'])."<br/>";
@@ -32,41 +33,35 @@ if($_POST){
                 header("location:adminSite.php");   
                 break;  
               }   
-           }       
-    else { 
-      if( $oneUser['role']=="user" ){ 
+           }     
+       //Hasta qui funciona muy bien    
+           
+    elseif( $oneUser['role']=="user" ){ 
         if ( ($oneUser['username']==$username) && ($oneUser['password']==$password) ){ 
               $_SESSION['username']= $oneUser['username'];
-              $_SESSION['password']= $oneUser['password'];  
-              $_SESSION['role']=$oneUser['role'];  
+           
                 print_r($oneUser['username'])."<br/>";
                 print_r($oneUser['password'])."<br/>";
                 print_r($oneUser['role'])."<br/>";
  
                 echo "Entro al foreach si tiene rol de USER";              
-                 header("location:projects.php");   
-              break;   
-            } else {
-                $_SESSION['username']= "";
-                $_SESSION['password']= "";
-                $_SESSION['role']="";   
-
+                header("location:projects.php");   
+              break;                      
+            }            
+        else {
+                $_SESSION['username']="";
                 print_r($oneUser['username'])."<br/>";
                 print_r($oneUser['password'])."<br/>";
                 print_r($oneUser['role'])."<br/>";
 
-              echo "The user and password are invalid";
+               echo "The user and password are invalid";
               header("location:session.php");   
               break;  
             }                       
-          }    
-        }         
-      }
-   }
-
-
-
-
+    }  
+  }        
+}         
+  
 ?>
 
 <!doctype html>
@@ -82,7 +77,7 @@ if($_POST){
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="style.css">
 
 
  <!-- Agregue font Awesome de bootsrap-->

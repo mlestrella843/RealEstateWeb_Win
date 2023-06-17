@@ -1,5 +1,5 @@
 <?php include('connection.php');?>
-
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +28,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <span class="text-primary fs-5 fw-bold">Dreamer Real Estate</span> 
+      <span class="text-primary fs-4 fw-bold">Dreamer Real Estate</span> 
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,23 +37,23 @@
       
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link text-nav_bar_menu fs-5 fw-bold" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="session.php">Login</a>
+          <a class="nav-link text-nav_bar_menu fs-5 fw-bold" href="session.php">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="register.php">Register</a>
+          <a class="nav-link text-nav_bar_menu fs-5 fw-bold" href="register.php">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="closeSession.php">Sign Out</a>
+          <a class="nav-link text-nav_bar_menu fs-5 fw-bold" href="closeSession.php">Sign Out</a>
         </li>
       </ul>
 
-      <!-- <form class="d-flex">
-        <input class="form-control me-2" type="email" placeholder="email" aria-label="email">
-        <button class="btn btn-primary btn-primary-outline-success" type="button">Subscribe</button>
-      </form> -->
+       <form class="d-flex">
+        <input class="form-control me-2 text-primary fs-5 fw-bold" type="email" placeholder="email" aria-label="email">
+        <button class="btn btn-secondary btn-primary-outline-success text-nav_bar_menu fs-5 fw-bold" type="button">Subscribe</button>
+      </form> 
 
     </div>
   </div>
@@ -92,7 +92,7 @@
 <!-----Sections----------------->
 
 <section class="w-50 mx-auto text-center pt-5" id="intro">
-  <h1 class="p-3 fs-2 border-top border-3">We are an Unique <span class="text-primary">Dreamer Real Estate</span></h1>
+  <h1 class="p-3 fs-2 border-top border-3">We are an Unique <span class="text-secondary">Dreamer Real Estate</span></h1>
   <p><span class="text-primary">Dreamer Real Estate</span> we are Lorem ipsum dolor sit amet, consectetur
    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -170,7 +170,7 @@
     <!-- div for Information -->
         <div class="col-6 wrapper">
             <h2 class= "mt-5 mb-5">Ubicated in Calgary, AB, Canada</h2>
-            <h2 class="text-primary mb-4" id="typewriter"></h2>
+            <h2 class="text-secondary mb-4" id="typewriter"></h2>
             <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat</p>

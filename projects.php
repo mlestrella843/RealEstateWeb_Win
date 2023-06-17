@@ -2,6 +2,7 @@
 <?php include('connection.php');?>
 
 <?php  
+
 $sentence=$connection->prepare("SELECT * FROM `properties`");    
 $sentence->execute();
 $properties = $sentence;

@@ -4,7 +4,7 @@
 
 <!-----Footer----------------->
 
-<footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+<footer class="w-100 d-flex align-items justify-content-center flex-wrap bg-primary p-5">
   <p class="fs-5 px-3 pt-3">Dreamers Real Estate. &copy; All rigths reserved 2023</p>
    <div id="icons">
       <a href="#"><i class="bi bi-facebook"></i></a>
@@ -13,7 +13,6 @@
    </div>
 
 </footer>
-
 
 </body>
 

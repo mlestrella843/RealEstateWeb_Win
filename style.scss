@@ -1,1 +1,17 @@
+
+*body{
+  margin: 0%;
+  padding: 0%;
+}
+
+$primary: #adb5bd;
+$secondary: #fd7e14;
+$nav_bar_menu: #6c757d;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "nav_bar_menu": $nav_bar_menu
+);
+
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
