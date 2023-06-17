@@ -7,11 +7,14 @@
 $primary: #adb5bd;
 $secondary: #fd7e14;
 $nav_bar_menu: #6c757d;
+$success:#20c997;
+
 
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
-  "nav_bar_menu": $nav_bar_menu
+  "nav_bar_menu": $nav_bar_menu,
+  "success":$success,
 );
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";

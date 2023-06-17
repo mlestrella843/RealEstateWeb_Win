@@ -92,9 +92,11 @@
 </head>
 
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
+
+  <header class="container-fluid bg-secondary d-flex justify-content-center">
+    <p class="text-light mb-0 p-2 fs-5">Welcome to Dreamer Real Estate Website!</p>
+  </header> 
+
 
   <br/>
   <br/>
@@ -111,31 +113,31 @@
             </div>
             <!--Segundo divi con forumlario dentro-->
         <div class="col-md-4">
-            <div class="card">
-                        <div class="card-header">
+            <div class="card fs-5 mb-5">
+                        <div class="card-header text-uppercase fw-bold">
                             Login Page
                         </div>          
             
-                        <div class="card-body">
+                        <div class="card-body border border-3">
                             <form action="session.php" method="post">
-                                    Username: <input required class="form-control" type="text" name="username" id="">
+                                    Username: <input required class="form-control " type="text" name="username" id="">
                                     <br/>
-                                    Password: <input required class="form-control" type="password" name="password" id="">
+                                    Password: <input required class="form-control " type="password" name="password" id="">
                                     <br/>
                                     <p>
                                     Role:
                                     <div class="input-group mb-3">
-                                      <select required class="form-select" name="roleName">
+                                      <select required class="form-select " name="roleName">
                                         <option selected class="fonts">Choose Admin or User...</option>
                                         <option value="user" class="fonts">User</option>
                                         <option value="admin" class="fonts">Admin</option>
                                       </select>
                                     </div>
                                     <br/>
-                                <button style="width:30%" class="btn btn-success" type="submit">Submit</button>            
+                                <button style="width:30%" class="btn btn-secondary text-uppercase fw-bold fs-7 text-white" type="submit">Submit</button>            
                             </form>
                             <br/>
-                             <p><a class="link-opacity-100" href="register.php">Sign Up / Register</a></p>
+                             <p><a class="link-opacity-100 text-info text-decoration-underline text-uppercase fs-6 fw-bold" href="register.php">Sign-Up/Register</a></p>
                             <br/>
 
                         </div>
