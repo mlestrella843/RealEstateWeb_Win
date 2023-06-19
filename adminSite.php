@@ -62,7 +62,7 @@ if($_POST){
     //DELETE A PROPERTY
     //for delete a property
     if(isset($_GET['txtID'])){
-
+        
         $txtID=( isset($_GET['txtID']) )?$_GET['txtID']:"";
        // $sentence=$connection->prepare("DELETE FROM `properties` WHERE id=$txtID");
         $sentence=$connection->prepare("DELETE FROM properties WHERE id=:id");//nuevo

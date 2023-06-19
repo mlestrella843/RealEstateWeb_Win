@@ -60,6 +60,9 @@
 
     }
 
+      $sentence=$connection->prepare("SELECT * FROM `properties`");     
+      $sentence->execute();   
+      $properties = $sentence;
 
 ?>
 
@@ -104,7 +107,56 @@
             </div>
         <!-------->
         </div>
-        </div>
-        </div>
+        
+
+        <div class="col-md-8">
+     <!----------->                        
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Descripcion</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>Status</th>
+                            <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <?php foreach($properties as $property) { ?>
+                        <tr>
+                            <td><?php echo $property['id']; ?></td>
+                            <td><?php echo $property['name']; ?></td>
+
+                            <td>                               
+                                <img width="150" src="Images/<?php echo $property['image']; ?>" alt="" srcset="">                               
+                            </td>
+
+                            <td><?php echo $property['description']; ?></td>
+                           
+                            <td><?php echo $property['address']; ?></td>
+                            <td><?php echo $property['city']; ?></td>
+
+                            <td><?php echo $property['status']; ?></td>
+                            <td><?php echo $property['price']; ?></td>
+
+                            <td> <a class="btn btn-danger" href="adminSite.php?txtID=<?php echo $property['id']; ?>" role="button">Delete</a></td>
+
+                            <td> <a class="btn btn-info text-white" href="edit.php?txtID=<?php echo $property['id']; ?>" role="button">Edit</a></td>
+                            
+                        </tr>
+                       <?php } ?>
+                    </tbody>
+                </table>
+            </div>
+    <!----------->            
+        </div>  
+    </div>     
+        
+</div>   
 
         <?php include('footer.php');  ?>
