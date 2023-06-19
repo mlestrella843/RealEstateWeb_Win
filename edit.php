@@ -64,15 +64,15 @@
 ?>
 
 <br/>
-<div class="container">
+<div class="container mt-5">
     <div class="row">
         <div class="col-md-4">
         <!----------->                      
-          <div class="card">
-                <div class="card-header">
+          <div class="card fs-5 mb-5">
+                <div class="card-header text-uppercase fw-bold">
                     Project Information
                 </div>
-                <div class="card-body">          
+                <div class="card-body border border-3">          
                     <form action="edit.php" method="post" enctype="multipart/form-data">
 
                         <div class="mb-3">
@@ -82,25 +82,29 @@
                         </div>
 
                         <!-- nameproject es el nombre que entro por teclado, y que se guarda en la columna name de la base de datos-->
-                        Name of project: <input value="<?php echo $nameProject; ?>" class="form-control" type="text" name="nameProject" id=""> 
+                        Name of project: <input value="<?php echo $nameProject; ?>" class="form-control border border-3" type="text" name="nameProject" id=""> 
                         <br/>
-                        Image of project: <input value="<?php echo $image; ?>" class="form-control" type="text" name="image" id="">
+                        Image of project: <input value="<?php echo $image; ?>" class="form-control border border-3" type="text" name="image" id="">
                         <br/>
                         Description:
-                        <input value="<?php echo $description; ?>" class="form-control"  type="text" name="description" id="" cols="30" rows="4"></input>
+                        <input value="<?php echo $description; ?>" class="form-control border border-3"  type="text" name="description" id="" cols="30" rows="4"></input>
                         <br/>
-                        Address: <input value="<?php echo $address; ?>" class="form-control" type="text" name="address" id=""> 
+                        Address: <input value="<?php echo $address; ?>" class="form-control border border-3" type="text" name="address" id=""> 
                         <br/>
-                        city: <input value="<?php echo $city; ?>" class="form-control" type="text" name="city" id=""> 
+                        city: <input value="<?php echo $city; ?>" class="form-control border border-3" type="text" name="city" id=""> 
                         <br/>
-                        Status:<input value="<?php echo $status; ?>" class="form-control" type="text" name="status" id=""> 
+                        Status:<input value="<?php echo $status; ?>" class="form-control border border-3" type="text" name="status" id=""> 
                         <br/>
-                        Price: <input value="<?php echo $price; ?>" class="form-control" type="text" name="price" id="">
+                        Price: <input value="<?php echo $price; ?>" class="form-control border border-3" type="text" name="price" id="">
                         <br/>
 
-                        <input class="btn btn-success" type="submit" value="Update info">
+                        <input class="btn btn-secondary text-uppercase fw-bold fs-7 text-white" type="submit" value="Update info">
                     </form>
                 </div>  
             </div>
         <!-------->
         </div>
+        </div>
+        </div>
+
+        <?php include('footer.php');  ?>
