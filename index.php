@@ -167,14 +167,14 @@
 <section class="local border-top border-3"> 
   <div class="row">
     <!-- div for Map Image -->
-        <div class="col-6 wrapper">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap border border-dark">
             <div><img src="Images/map2.png" alt="map" width="100%" height="400px" class="mt-5 mb-5 d-flex"></div>
         </div>
     
     <!-- div for Information -->
-        <div class="col-6 wrapper">
-            <h2 class= "mt-5 mb-5">Ubicated in Calgary, AB, Canada</h2>
-            <h2 class="text-secondary mb-4" id="typewriter"></h2>
+        <div class=" wrapper col-lg-6 col-md-12 col-sm-12 my-5 border border-dark">
+            <h2 class="mt-5 me-5">Ubicated in Calgary, AB, Canada</h2>
+            <h2 class=" mt-5 text-secondary mb-4" id="typewriter"></h2>
             <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
