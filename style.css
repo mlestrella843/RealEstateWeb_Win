@@ -11754,4 +11754,9 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+@media (max-width: 768px) {
+  #div-map {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

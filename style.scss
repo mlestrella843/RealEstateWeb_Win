@@ -20,3 +20,11 @@ $theme-colors: (
 );
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+/*
+@media (max-width:768px){
+  #div-map{
+    width: 100% !important;
+  }
+}
+*/

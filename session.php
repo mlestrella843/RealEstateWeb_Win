@@ -1,10 +1,4 @@
 <?php include('connection.php');
-    /*  $_SESSION['username']= "";
-      $_SESSION['password']= "";
-      $_SESSION['role']="";
-      $username ="";
-      $password = "";
-      $role = "";*/
       session_start() 
 ?>
 
@@ -24,6 +18,7 @@
       if( $oneUser['role']=="admin" ){ 
         if( ($oneUser['username']==$username) && ($oneUser['password']==$password) ) {                 
                 $_SESSION['username']= $oneUser['username'];
+                $_SESSION['role']= $oneUser['role'];
                  
                 print_r($oneUser['username'])."<br/>";
                 print_r($oneUser['password'])."<br/>";
@@ -38,6 +33,7 @@
            
     elseif( $oneUser['role']=="user" ){ 
         if ( ($oneUser['username']==$username) && ($oneUser['password']==$password) ){ 
+              $_SESSION['username']= $oneUser['username'];
               $_SESSION['username']= $oneUser['username'];
            
                 print_r($oneUser['username'])."<br/>";
@@ -112,35 +108,35 @@
 
             </div>
             <!--Segundo divi con forumlario dentro-->
-        <div class="col-md-4">
+        <div class="col-sm-12 col-md-8 col-lg-4">
             <div class="card fs-5 mb-5">
-                        <div class="card-header text-uppercase fw-bold">
-                            Login Page
-                        </div>          
+                  <div class="card-header text-uppercase fw-bold">
+                      Login Page
+                  </div>          
             
-                        <div class="card-body border border-3">
-                            <form action="session.php" method="post">
-                                    Username: <input required class="form-control " type="text" name="username" id="">
-                                    <br/>
-                                    Password: <input required class="form-control " type="password" name="password" id="">
-                                    <br/>
-                                    <p>
-                                    Role:
-                                    <div class="input-group mb-3">
-                                      <select required class="form-select " name="roleName">
-                                        <option selected class="fonts">Choose Admin or User...</option>
-                                        <option value="user" class="fonts">User</option>
-                                        <option value="admin" class="fonts">Admin</option>
-                                      </select>
-                                    </div>
-                                    <br/>
-                                <button style="width:30%" class="btn btn-secondary text-uppercase fw-bold fs-7 text-white" type="submit">Submit</button>            
-                            </form>
-                            <br/>
-                             <p><a class="link-opacity-100 text-info text-decoration-underline text-uppercase fs-6 fw-bold" href="register.php">Sign-Up/Register</a></p>
-                            <br/>
+                  <div class="card-body border border-3">
+                      <form action="session.php" method="post">
+                              Username: <input required class="form-control " type="text" name="username" id="">
+                              <br/>
+                              Password: <input required class="form-control " type="password" name="password" id="">
+                              <br/>
+                              <p>
+                              Role:
+                              <div class="input-group mb-3">
+                                <select required class="form-select " name="roleName">
+                                  <option selected class="fonts">Choose Admin or User...</option>
+                                  <option value="user" class="fonts">User</option>
+                                  <option value="admin" class="fonts">Admin</option>
+                                </select>
+                              </div>
+                              <br/>
+                          <button style="width:30%" class="btn btn-secondary text-uppercase fw-bold fs-7 text-white" type="submit">Submit</button>            
+                      </form>
+                      <br/>
+                        <p><a class="link-opacity-100 text-info text-decoration-underline text-uppercase fs-6 fw-bold" href="register.php">Sign-Up/Register</a></p>
+                      <br/>
 
-                        </div>
+                  </div>
             <div class="card-footer text-muted">
         </div>
     </div>  

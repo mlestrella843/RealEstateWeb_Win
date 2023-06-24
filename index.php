@@ -20,6 +20,8 @@
 </head>
 
 <body>
+
+
     <!--Header color Blue, and telephone-->
   <!-- <header class="container-fluid bg-primary d-flex justify-content-center " id="header-color" >
     <p class="text-light mb-0 p-2 fs-6" id="header-color">Contact Us 1-(587)-444-4444</p>
@@ -60,6 +62,8 @@
 </nav>
 
 <!--Slider-->
+
+ 
 
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -105,7 +109,7 @@
 
   <div class="row w-75 mx-auto my-5 servicio-fila"> 
     <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap border border-dark">
-      <img src="images/house1.jpeg" class="rounded" alt="rent" width="180" height="160">
+      <img src="images/Rent.png" class="rounded" alt="rent" width="300" height="220">
       <div> 
       <h3 class="fs-5 mt-4 px-4 pb-1">Rent</h3>
       <p class="px-4">We Rent all kind of properties, houses, condos, apartments, in different countries</p>
@@ -113,7 +117,7 @@
     </div>
 
     <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap border border-dark">
-      <img src="images/house2.jpeg" class="rounded" alt="rent" width="180" height="160">
+      <img src="images/Sale.png" class="rounded" alt="rent" width="300" height="220">
       <div>
       <h3 class="fs-5 mt-4 px-4 pb-1">Sale</h3>
       <p class="px-4">We Sale all kind of properties, houses, condos, apartments, in different countries</p>
@@ -123,7 +127,7 @@
 
 <div class="row w-75 mx-auto my-5 servicio-fila"> 
    <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap border border-dark">
-     <img src="images/house3.jpeg" class="rounded" alt="rent" width="180" height="160">
+     <img src="images/Consulting.png" class="rounded" alt="rent" width="300" height="220">
      <div> 
      <h3 class="fs-5 mt-4 px-4 pb-1">Consulting</h3>
      <p class="px-4">We offer consulting to all kind of properties, houses, condos, apartments, in different countries</p>
@@ -131,7 +135,7 @@
    </div>
 
    <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap border border-dark">
-     <img src="images/house5.jpeg" class="rounded" alt="rent" width="180" height="160 border border-dark">
+     <img src="images/Design.png" class="rounded" alt="rent" width="300" height="220 border border-dark">
      <div>
      <h3 class="fs-5 mt-4 px-4 pb-1">Design</h3>
      <p class="px-4">We offer Desing to all kind of properties, houses, condos, apartments, in different countries</p>
@@ -140,7 +144,7 @@
 </div>
 
 </section>
-
+<div class="container"> 
 <!-----About Us----------------->
 <section> 
   <div class="w-75 m-auto text-center" id="team">
@@ -161,10 +165,10 @@
 
   <!-----Map----------------->
 <section class="local border-top border-3"> 
-  <div class=" row">
+  <div class="row">
     <!-- div for Map Image -->
-        <div class="col-6">
-            <div><img src="Images/map2.png" alt="map" width="100%" height="500px" class="mt-5 mb-5 d-flex"></div>
+        <div class="col-6 wrapper">
+            <div><img src="Images/map2.png" alt="map" width="100%" height="400px" class="mt-5 mb-5 d-flex"></div>
         </div>
     
     <!-- div for Information -->
@@ -189,7 +193,7 @@
     </div> -->
   <div class="container">
       <div class="text-center mb-4 mt-5" id="title-form">
-        <div><img src="Images/support.png" alt="contact" width="500px" height="auto"></div>
+        <div><img src="Images/14-Searching.png" alt="contact Us" width="180px" height="auto"></div>
         <h2>Contacts</h2>
         <p class="fs-5">Estamos aqui para hacer realidad de que tengas la casa sonada</p>
       </div>
@@ -213,6 +217,9 @@
   </div>
   
   </section>
+
+
+  </div>
 
 <!-----Footer----------------->
 
