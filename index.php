@@ -195,7 +195,7 @@
       <div class="text-center mb-4 mt-5" id="title-form">
         <div><img src="Images/14-Searching.png" alt="contact Us" width="180px" height="auto"></div>
         <h2>Contacts</h2>
-        <p class="fs-5">Estamos aqui para hacer realidad de que tengas la casa sonada</p>
+        <p class="fs-5">We are here to make it happen that you have a dream home</p>
       </div>
       <form action="" class="container-fluid w-50">
           <div class="mb-3">

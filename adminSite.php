@@ -35,11 +35,6 @@ if($_POST){
     //price
     $price=(isset ($_POST['price']))? $_POST['price']:"" ;
 
-   /* $sentence=$connection->prepare("INSERT INTO `properties` (`id`, `name`, `image`, `description`, 
-    `address`, `city`, `status`, `price`) VALUES (NULL, '$nameProject', '$image', '$description',
-    '$address', '$city', '$status', '$price');");
-   
-    $sentence->execute();*/
 
     $sentence=$connection->prepare("INSERT INTO properties(id, name, image, description, 
     address, city, status, price) VALUES (NULL, :name, :image, :description,
