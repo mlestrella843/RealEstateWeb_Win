@@ -23,7 +23,7 @@ This project consists of a CRUD developed in PHP and Mysql with XAMPP for the se
 - Go to the Repository and copy his url
 - Open Visual Studio Code
 - Open a new terminal integrated
-- put this instruction on your terminal: git clone https://github.com/user/name-of-repository.git
+- put this instruction on your terminal: git clone https://github.com/mlestrella843/RealEstateWeb_Win.git
 
 ### Prerequisites
 - Do the clone's project from GitHub
